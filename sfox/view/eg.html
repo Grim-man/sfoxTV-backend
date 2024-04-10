@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>动漫世界</title>
+    <style>
+        /* 基础样式重置 */
+        body, h1, h2, h3, p, figure, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* 登录按钮样式 */
+        .login-button {
+            float: right;
+            padding: 5px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .user-avatar {
+            border-radius: 50%; /* 圆形头像 */
+            width: 50px; /* 头像大小 */
+            height: 50px;
+            /* display: none; */
+        }
+
+        /* 横幅样式 */
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            position: relative;
+        }
+        /* 内容区域样式 */
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+        /* 页脚样式 */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* 创意元素：樱花特效 */
+        .sakura {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-image: url('sakura.png');
+            animation: sakura-fall 10s infinite;
+        }
+        /* 樱花飘落动画 */
+        @keyframes sakura-fall {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100vh); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">首页</a>
+        <a href="#">动漫列表</a>
+        <a href="#">我的收藏</a>
+        <!-- 登录按钮 -->
+        <div class="login-button" onclick="login()">
+            <img src="user-avatar.jpg" alt="用户头像" class="user-avatar">
+        </div>
+    </nav>
+    <div class="banner">
+        <!-- 樱花特效层 -->
+        <img src="../img/logo/logo-01.png" alt="樱花特效" class="sakura">
+            
+    </img>
+    </div>
+    <div class="content">
+        <h1>今日推荐</h1>
+        <!-- 动漫内容 -->
+    </div>
+    <div class="footer">
+        <p>版权所有 © 2024 动漫世界</p>
+    </div>
+</body>
+</html>
+
