@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>主题切换动态效果</title>
+<style>
+  body {
+    transition: background-color 0.5s ease;
+    /* 默认为日间模式 */
+    background-color: white;
+  }
+  body.dark-mode {
+    /* 暗黑模式 */
+    background-color: #333;
+  }
+  .theme-switcher {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+  }
+  .dark-mode .theme-switcher {
+    transform: rotate(180deg);
+  }
+</style>
+</head>
+<body>
+  <span class="theme-switcher" id="themeSwitcher">☀️</span>
+
+  <script>
+    const themeSwitcher = document.getElementById('themeSwitcher');
+    themeSwitcher.onclick = function() {
+      document.body.classList.toggle('dark-mode');
+      this.textContent = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+    };
+  </script>
+</body>
+</html>
