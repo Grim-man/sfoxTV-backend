@@ -1,0 +1,18 @@
+# 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tv_254
+    username: root
+    password: cjh1020
+
+# Mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名与下划线命名的自动转换
+
+# 端口配置
+server:
+  port: 8980
+  servlet:
+    context-path: /sfox
