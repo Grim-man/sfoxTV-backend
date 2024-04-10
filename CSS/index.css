@@ -55,3 +55,30 @@ body {
     overflow: hidden;
     padding: 10px;
 }
+
+.icon-container {
+    position: relative;
+    display:block;
+}
+
+#head-dropdown {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    list-style-type: none;
+    border-radius: 6px 6px 4px 4px;
+    /* box-shadow: 0 0 3px 0 #39393c;
+    z-index: 999;
+    width: 120px;
+    left: -27px;
+    font-size: 12px;
+    */
+} 
+
+.icon-container:hover #head-dropdown {
+    display: block;
+}
